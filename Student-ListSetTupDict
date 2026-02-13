@@ -1,0 +1,68 @@
+print("1= Student name \t 2= Subject \t 3= Marks(out of 50) \t 4= Result \t 5= Display All Details")
+print("--------------------------------------------------------------")
+
+choice = int(input("Enter the number from 1-5 to see the student details:"))
+
+student_name={"Asmi","Paree","Divy","Aishani"}
+subject=("Maths","Physics","Chemistry")
+maths_marks={"Asmi": 48,
+             "Paree": 46,
+             "Divy": 44,
+             "Aishani": 42
+            }
+physics_marks={"Asmi": 44,
+             "Paree": 48,
+             "Divy": 46,
+             "Aishani": 40
+            }
+chemistry_marks={"Asmi": 47,
+             "Paree": 45,
+             "Divy": 42,
+             "Aishani": 38
+            }
+
+Asmi = {48,44,47}
+Paree = {46,48,45}
+Divy = {44,46,42}
+Aishani = {42,40,38}
+
+if choice==1:
+    print("Student name",student_name)
+
+elif choice==2:
+    print("Subject",subject)
+
+elif choice==3:
+     print("--------------------------------------------------------------")
+     print("Maths marks:",maths_marks)
+     print("\nPhysics marks:",physics_marks)
+     print("\nChemistry marks:",chemistry_marks)
+     print("--------------------------------------------------------------")
+
+elif choice==4:
+    print("--------------------------------------------------------------")
+    print("Asmi's Result",Asmi)
+    print("\nParee's Result",Paree)
+    print("\nDivy's Result",Divy)
+    print("\nAishani's Result",Aishani)
+    print("--------------------------------------------------------------")
+
+elif choice == 5:
+    print("--------------------------------------------------------------")
+    print("Student Names:", student_name)
+    print("Subjects:", subject)
+    print("--------------------------------------------------------------")
+    print("Maths Marks:", maths_marks)
+    print("Physics Marks:", physics_marks)
+    print("Chemistry Marks:", chemistry_marks)
+    print("--------------------------------------------------------------")
+    print("Results:")
+    print("Asmi:", Asmi)
+    print("Paree:", Paree)
+    print("Divy:", Divy)
+    print("Aishani:", Aishani)
+    print("--------------------------------------------------------------")
+
+else:
+    print("Number not found, please choose numbers from 1-5 only.")
+
